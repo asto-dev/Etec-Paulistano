@@ -1,4 +1,4 @@
-import etecLogo from "/etec-logo.png"
+import etecLogo from "/etec-logo.webp"
 import Button from "../Button"
 
 export function NavBar() {
