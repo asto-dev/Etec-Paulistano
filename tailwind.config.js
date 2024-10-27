@@ -15,7 +15,8 @@ export default {
         "bg-blue-925": "#171a4a",
       },
       fontFamily: {
-        "sans": "Raleway"
+        "primary": "Helvetica",
+        "secondary": "Duru Sans"
       }
     },
   },
