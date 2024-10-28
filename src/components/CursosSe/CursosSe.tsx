@@ -1,4 +1,4 @@
-import CardCu from "../CardCu/CardCu"
+import CardCurso from "../CardCurso/CardCurso.tsx"
 export function CursosSe() {
   const cursos = [
     {
@@ -31,7 +31,7 @@ export function CursosSe() {
     </div>
 
     <div className="w-vhw p-10 bg-[#171A4A] flex justify-around items flex-wrap">
-    { cursos.map( (curso) => <CardCu curName={curso.name} img={curso.img}/> ) }
+    { cursos.map( (curso) => <CardCurso curName={curso.name} img={curso.img}/> ) }
     
     </div>
     
