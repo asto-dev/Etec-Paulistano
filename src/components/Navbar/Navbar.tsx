@@ -1,5 +1,6 @@
 import etecLogo from "/etec-logo.webp"
 import Button from "../Button/Button"
+import { NavLink } from "react-router-dom"
 
 export function NavBar() {
   return ( 
@@ -8,24 +9,24 @@ export function NavBar() {
       <nav>
         <ul className='flex gap-11'>
           <li className='text-yellow-350 flex flex-col items-center gap-1'>
-            <a href="#">Início</a>
+            <NavLink to={"/"}>Início</NavLink>
             <span className='w-12 h-0.5 bg-yellow-350'/>
           </li>
 
           <li className='text-white'>
-            <a href="#">Cursos</a>
+            <NavLink to={"/cursos"}>Cursos</NavLink>
           </li>
 
           <li className='text-white'>
-            <a href="#">Institucional</a>
+            <NavLink to={"#"}>Institucional</NavLink>
           </li>
 
           <li className='text-white'>
-            <a href="#">Acadêmico</a>
+            <NavLink to={"#"}>Acadêmico</NavLink>
           </li>
 
           <li className='text-white'>
-            <a href="#">Contato</a>
+            <NavLink to={"#"}>Contato</NavLink>
           </li>
         </ul>
       </nav>
