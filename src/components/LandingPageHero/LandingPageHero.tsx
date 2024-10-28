@@ -3,7 +3,7 @@ export function LandingPageHero() {
   return (
     <div
       className="bg-[url('background-landingpage.webp')] flex items-center w-full h-screen  
-     bg-center bg-cover bg-no-repeat  "
+      bg-center bg-cover bg-no-repeat"
     >
       <main className="flex flex-col  w-[53rem] ml-12 mt-20">
         <span className="text-white text-4xl">Bem-vindo (a) à Etec Paulistano</span>
