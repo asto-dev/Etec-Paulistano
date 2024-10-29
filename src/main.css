@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root{
+    --light-bg: #F6F6F6;
+    --text-yellow:rgb(255 190 0)
+}
