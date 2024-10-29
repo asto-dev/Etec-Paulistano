@@ -3,7 +3,7 @@ export function Phrase(props:{bg:string,text:string}) {
   return (
     <section
       id="Phrase"
-      className=" flex flex-row justify-center p-[150px] gap-[350px]"
+      className=" flex flex-row justify-center items-center p-[150px] gap-[350px]"
       style={{backgroundColor:props.bg}}
     >
       <div className="flex flex-col items-center">
@@ -16,7 +16,7 @@ export function Phrase(props:{bg:string,text:string}) {
       </div>
       <img
         src="./paulo-freire.png"
-        className=" w-[300px] h-[300px] object-fill border-2 rounded-full border-[--text-yellow]"
+        className=" w-[300px]  h-[300px] object-fill border-2 rounded-full border-[--text-yellow]"
       />
     </section>
   );
