@@ -1,4 +1,4 @@
-import { NavBar } from '../components/Header/Navbar'
+import { NavBar } from '../components/Navbar/Navbar'
 
 export function Courses() {
   return (
