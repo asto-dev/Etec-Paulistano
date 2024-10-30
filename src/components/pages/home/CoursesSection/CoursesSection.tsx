@@ -1,4 +1,5 @@
 import { courses } from "../../../../constants/courses.ts"
+import { Title } from "../../../shared/Title/Title.tsx"
 
 import { CardCurso } from "./Card/CardCurso.tsx"
 
@@ -6,7 +7,7 @@ export function CoursesSection() {
   return (
     <>
       <div className="flex flex-col items-center m-20 justify-center">
-        <div className="text-5xl font-bold text-[#171A4A]">Nossos Cursos</div>
+        <Title title="Nossos Cursos" />
         <p>Escolha o melhor curso para você!</p>
       </div>
 
