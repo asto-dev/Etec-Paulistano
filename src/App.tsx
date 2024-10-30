@@ -8,8 +8,9 @@ import { router } from './routes'
 export function App() {
   return (
     <HelmetProvider>  
-        <Helmet titleTemplate="%s - Etec Paulistano" />
-        <RouterProvider router={router} />
+      <Helmet titleTemplate="%s | Etec Paulistano" />
+
+      <RouterProvider router={router} />
     </HelmetProvider>
   )
 }

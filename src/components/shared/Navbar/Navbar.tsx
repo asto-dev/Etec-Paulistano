@@ -1,10 +1,12 @@
-import etecLogo from "/etec-logo.webp";
-import Button from "../Button/Button";
-import NavbarLink from "./NavbarLink";
+import etecLogo from "/etec-logo.webp"
+import Button from "../Button/Button"
+import NavbarLink from "./NavbarLink"
+
 export function NavBar() {
   return (
     <header className="bg-blue-1000 opacity-90 w-dvw h-24 font-primary flex justify-between items-center px-14 font-semibold shadow-sm shadow-black fixed z-10 flex-1">
-      <img src={etecLogo} alt="Logo da Etec" />
+      <img src={etecLogo} alt="Logo da Etec Paulistano" />
+
       <nav>
         <ul className="flex gap-11">
           <NavbarLink path={"/"} content="Início" />
@@ -14,6 +16,7 @@ export function NavBar() {
           <NavbarLink path={"#"} content="Contato" />
         </ul>
       </nav>
+
       <Button content="Área do Aluno" />
     </header>
   );

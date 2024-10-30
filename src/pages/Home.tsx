@@ -1,4 +1,4 @@
-import { CursosSe } from "../components/pages/home/CursosSe"
+import { CoursesSection } from "../components/pages/home/CoursesSection"
 import { Phrase } from "../components/pages/home/LandingPageHero"
 import { LandingPageHero } from "../components/pages/home/Hero"
 
@@ -9,9 +9,13 @@ export function Home() {
   return (
     <div className='w-full overflow-hidden'>
       <NavBar />
+
       <LandingPageHero />
+
       <Phrase bg={'var(--light-bg)'} text={'black'}/>
-      <CursosSe />
+
+      <CoursesSection />
+
       <Footer />
     </div>
   )
