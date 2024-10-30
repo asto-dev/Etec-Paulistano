@@ -1,6 +1,6 @@
 import etecLogo from "/etec-logo.webp"
-import facebookIcon from "../../../public/facebook-icon.png"
-import instagramIcon from "../../../public/instagram-icon.png"
+import facebookIcon from "/facebook-icon.png"
+import instagramIcon from "/instagram-icon.png"
 
 export function SocialMedia() {
   return(
