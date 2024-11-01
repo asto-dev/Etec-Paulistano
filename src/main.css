@@ -6,8 +6,6 @@
     --light-bg: #F6F6F6;
     --text-yellow:rgb(255 190 0)
 }
-
-
 @layer base {
     * {
         transition: all 0.2s;
