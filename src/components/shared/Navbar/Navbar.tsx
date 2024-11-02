@@ -7,7 +7,7 @@ export function NavBar() {
     <header className="bg-blue-1000 opacity-90 w-dvw h-24 font-primary flex justify-between items-center px-14 font-semibold shadow-sm shadow-black fixed z-10 flex-1">
       <img src={etecLogo} alt="Logo da Etec Paulistano" />
 
-      <nav>
+      <nav >
         <ul className="flex gap-11">
           <NavbarLink path={"/"} content="Início" />
           <NavbarLink path={"/cursos"} content="Cursos" />
@@ -17,7 +17,7 @@ export function NavBar() {
         </ul>
       </nav>
 
-      <Button Bordertheme="Dark" content="Área do Aluno" />
+      <Button pathToPage={'/area-aluno'} Bordertheme="Dark" content="Área do Aluno" />
     </header>
   );
 }
