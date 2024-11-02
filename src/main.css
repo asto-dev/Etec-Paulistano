@@ -4,7 +4,11 @@
 
 :root{
     --light-bg: #F6F6F6;
-    --text-yellow:rgb(255 190 0)
+    --secound:#FFBE00;
+    --light-secound:#FFCC50;
+    ---primary:#000020;
+    --light-primary:#171A4A;
+    --third:#281F7A;
 }
 @layer base {
     * {

@@ -20,7 +20,7 @@ export function LandingPageHero() {
         lg:text-3xl md:text-2xl sm:text-xl ">
           Onde o conhecimento transforma vidas e o futuro é construído com dedicação. Oferecemos formação de excelência com professores qualificados. Venha transformar sua carreira!</p>
 
-        <Button content="Vestibulinho"/>
+        <Button Bordertheme="Dark" content="Vestibulinho"/>
       </main>
     </div>
   );

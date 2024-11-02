@@ -17,7 +17,7 @@ export function NavBar() {
         </ul>
       </nav>
 
-      <Button content="Área do Aluno" />
+      <Button Bordertheme="Dark" content="Área do Aluno" />
     </header>
   );
 }
