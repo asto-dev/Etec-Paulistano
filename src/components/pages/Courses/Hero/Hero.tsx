@@ -1,4 +1,4 @@
-import Button from "../../shared/Button/Button";
+import Button from "../../../shared/Button/Button";
 export default function Hero(props: { Name: string }) {
   return (
     <div>

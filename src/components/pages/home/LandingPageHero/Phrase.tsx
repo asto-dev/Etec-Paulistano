@@ -1,14 +1,17 @@
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
-export function Phrase(props:{bg:string,text:string}) {
+export function Phrase(props: { bg: string; text: string }) {
   return (
     <section
       id="Phrase"
       className=" flex flex-row justify-center items-center p-[150px] gap-[350px]"
-      style={{backgroundColor:props.bg}}
+      style={{ backgroundColor: props.bg }}
     >
       <div className="flex flex-col items-center">
         <BiSolidQuoteAltLeft className="  text-yellow-400 text-[100px]  relative right-[370px] top-[50px]" />
-        <h1 style={{color:props.text}} className=" text-5xl text-center font-sans text-nowrap">
+        <h1
+          style={{ color: props.text }}
+          className=" text-5xl text-center font-sans text-nowrap"
+        >
           Se a educação sozinha não <br /> transforma a sociedade, sem <br />
           ela tampouco a sociedade <br /> muda.
         </h1>

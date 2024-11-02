@@ -1,1 +1,1 @@
-export * from './Phrase'
+export * from "./Phrase";
