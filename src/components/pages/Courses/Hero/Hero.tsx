@@ -26,7 +26,7 @@ export default function Hero(props: PropsCourse) {
               {"Baixe o PDF do plano de cursos"} <br /> {"na área do aluno ;)"}
             </p>
             <div className="relative top-10">
-              <Button Bordertheme="Light" content="Área do aluno" />
+              <Button pathToPage={'/area-aluno'} Bordertheme="Light" content="Área do aluno" />
             </div>
           </div>
           <div className="flex flex-col items-center justify-around w-[50%] h-[200px]">

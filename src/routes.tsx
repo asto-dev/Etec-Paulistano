@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 
 import { Home } from './pages/Home'
 import { Courses } from './pages/Courses'
+import { StudentArea } from './pages/StudentArea'
 
 export const router = createBrowserRouter([
   {
@@ -11,5 +12,9 @@ export const router = createBrowserRouter([
   {
     path: '/cursos',
     element: <Courses />,
+  },
+  {
+    path: '/area-aluno',
+    element: <StudentArea />,
   },
 ])

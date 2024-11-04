@@ -1,11 +1,22 @@
+import { useNavigate } from "react-router-dom";
+
 interface ButtonProps {
   content: string;
   Bordertheme: string;
+  pathToPage: string;
 }
 
-function Button({ content, Bordertheme }: ButtonProps) {
+function Button({ content, Bordertheme, pathToPage }: ButtonProps) {
+
+  const navigate = useNavigate()
+
+  function changeNavigation(path: string) {
+    navigate(path)
+  }
+
   return (
     <button
+      onClick={() => changeNavigation(pathToPage)}
       style={{
         borderColor:
           Bordertheme === "Dark" ? "rgb(202 138 4)" : "var(--light-secound)",

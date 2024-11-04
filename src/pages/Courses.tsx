@@ -3,9 +3,8 @@ import Hero from "../components/pages/Courses/Hero/Hero";
 import Study from "../components/pages/Courses/Hero/Study";
 import { Footer } from "../components/shared/Footer";
 import { NavBar } from "../components/shared/Navbar/Navbar";
+
 export function Courses() {
-  {
-  }
   return (
     <>
       <NavBar />
