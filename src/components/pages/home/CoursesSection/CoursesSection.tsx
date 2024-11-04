@@ -6,7 +6,7 @@ import { CardCurso } from "./Card/CardCurso.tsx"
 export function CoursesSection() {
   return (
     <>
-      <div className="flex flex-col items-center m-20 justify-center">
+      <div className="flex flex-col items-center p-20 justify-center bg-[var(--light-bg)]">
         <Title title="Nossos Cursos" />
         <p>Escolha o melhor curso para você!</p>
       </div>

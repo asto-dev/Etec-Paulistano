@@ -1,0 +1,16 @@
+#Gallery div .swiper-pagination-bullet-active {
+  background-color: var(--secound);
+  padding: 12px;
+  border-radius: 100%;
+  opacity: 100%;
+  position: relative;
+  top: 12px;
+}
+#Gallery .swiper-pagination-bullet {
+  background-color: #7f5f10;
+  padding: 10px;
+  border-radius: 100%;
+  opacity: 100%;
+  position: relative;
+  top: 10px;
+}

@@ -4,8 +4,8 @@ import { CardProjects } from "./Card/Card"
 
 export function StudentProjects() {
   return (
-    <div>
-      <div className="flex flex-col items-center m-20 justify-center gap-5">
+    <div className="bg-[--light-bg]">
+      <div className="flex flex-col items-center p-20 justify-center gap-5 ">
         <Title title="Projetos de Alunos" />
 
         <p>Projetos desenvolvidos por nossos alunos</p>

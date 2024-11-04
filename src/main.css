@@ -10,9 +10,12 @@
     --light-primary:#171A4A;
     --third:#281F7A;
 }
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 @layer base {
     * {
         transition: all 0.2s;
     }
 }
-

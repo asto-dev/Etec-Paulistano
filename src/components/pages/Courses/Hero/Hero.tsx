@@ -1,13 +1,21 @@
 import Button from "../../../shared/Button/Button";
-export default function Hero(props: { Name: string }) {
+
+type PropsCourse = {
+  Name: string;
+  Coordinators: string[];
+  Period: string[];
+  Time: string[];
+  HeroImage:string
+};
+export default function Hero(props: PropsCourse) {
   return (
-    <div>
-      <div className="pt-[230px] bg-[url('./Courses/DS.png')] bg-center h-screen bg-no-repeat bg-cover flex flex-col items-center">
+    <section id="Hero">
+      <div style={{backgroundImage:`url('${props.HeroImage}')`}} className="pt-[230px] bg-center h-screen bg-no-repeat bg-cover flex flex-col items-center">
         <h1 className="font-sans text-[var(--secound)]  text-5xl font-semibold text-center">
           {props.Name}
         </h1>
         <h3 className=" mt-5 mb-16 font-sans text-slate-50 flex flex-row items-center justify-between text-2xl text-center">
-          Ensino Médio com Técnico em Desenvolvimento de <br /> Sistemas
+          Ensino Médio com Técnico em {props.Name}
         </h3>
         <div className=" bg-[var(--light-bg)] p-10 pt-5 pb-5 h-[400px] rounded-[40px] font-sans flex flex-row items-center justify-between w-[1000px] ">
           <div className=" w-[50%] flex flex-col items-center h-[300px] justify-around  border-r-2 border-r-[var(--light-primary)] p-10">
@@ -26,19 +34,25 @@ export default function Hero(props: { Name: string }) {
               <strong className="text-[var(--light-primary)]">
                 Coordenador:
               </strong>{" "}
-              Manhã: Flavio Mota <br /> Noite ???
+              {props.Coordinators.map((Coordinators) => {
+                return Coordinators+" ";
+              })}
             </h1>
             <h1 className=" text-xl w-[80%]">
               <strong className="text-[var(--light-primary)]">Período:</strong>{" "}
-              Manhã ou Noite
+              {props.Period.map((period) => {
+                return period+" ";
+              })}
             </h1>
             <h1 className=" text-xl w-[80%]">
               <strong className="text-[var(--light-primary)]">Duração:</strong>{" "}
-              Manhã: 3 Anos <br /> Noite: X Módulos
+              {props.Time.map((time) => {
+                return time+" ";
+              })}
             </h1>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
