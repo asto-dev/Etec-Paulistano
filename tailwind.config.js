@@ -26,6 +26,7 @@ export default {
       backgroundColor: {
         "blue-925": "#171a4a",
         "blue-1000": "#000020",
+        "yellow-250": "#FFCC50",
         "yellow-350": "#FFBE00",
       },
       textColor: {
