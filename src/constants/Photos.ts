@@ -1,4 +1,4 @@
-class Photo {
+export class Photo {
   public image: string;
   constructor(photo: string) {
     this.image = photo;

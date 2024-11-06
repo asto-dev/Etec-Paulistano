@@ -1,7 +1,8 @@
-import Gallery from "../components/pages/Courses/Gallery/Gallery";
 import Hero from "../components/pages/Courses/Hero/Hero";
 import Study from "../components/pages/Courses/Hero/Study";
 import { Footer } from "../components/shared/Footer";
+import Gallery from "../components/shared/Gallery/Gallery";
+import { Gallery as Photos } from "../constants/Photos";
 import { NavBar } from "../components/shared/Navbar/Navbar";
 
 export function Courses() {
@@ -29,7 +30,7 @@ export function Courses() {
           área. Essa formação proporciona uma base sólida  para a carreira
           em tecnologia, alinhando teoria e prática às demandas do setor."
       />
-      <Gallery Name="Galeria dos Alunos" />
+      <Gallery Name="Galeria dos Alunos" Gallery={Photos} />
       <Footer />
     </>
   );

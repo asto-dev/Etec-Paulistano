@@ -1,5 +1,5 @@
 import { CoursesSection } from "../components/pages/home/CoursesSection"
-import { Phrase } from "../components/pages/home/LandingPageHero"
+import { Phrase } from "../components/pages/home/Hero"
 import { LandingPageHero } from "../components/pages/home/Hero"
 import { StudentProjects } from "../components/pages/home/StudentProjects"
 

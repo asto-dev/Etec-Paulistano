@@ -2,9 +2,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Gallery as Photos } from "../../../../constants/Photos";
+import { Photo } from "../../../constants/Photos";
 import "./styles/Gallery.css";
-export default function Gallery(props: { Name: string }) {
+export default function Gallery(props: { Name: string; Gallery: Photo[] }) {
   return (
     <section id="Gallery" className=" h-[800px] bg-[var(--light-bg)] pb-10 ">
       <div className=" flex  justify-center pb-32">
@@ -30,7 +30,7 @@ export default function Gallery(props: { Name: string }) {
         style={{ paddingBottom: "120px" }}
       >
         <div className="swiper-wrapper flex flex-row pb-20 overflow-x-hidden w-[100%]">
-          {Photos.map((Photo, index) => {
+          {props.Gallery.map((Photo, index) => {
             return (
               <SwiperSlide key={index}>
                 <img
