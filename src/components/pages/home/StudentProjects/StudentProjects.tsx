@@ -11,7 +11,7 @@ export function StudentProjects() {
         <p>Projetos desenvolvidos por nossos alunos</p>
       </div>
 
-      <div className="px-10 pb-10 flex justify-around flex-wrap gap-4">
+      <div className="px-20 pb-10 flex justify-around flex-wrap gap-1">
         {studentProjects.map(item => 
           <CardProjects 
             description={item.description} 

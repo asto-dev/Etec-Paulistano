@@ -10,7 +10,7 @@ type PropsCourse = {
 export default function Hero(props: PropsCourse) {
   return (
     <section id="Hero">
-      <div style={{backgroundImage:`url('${props.HeroImage}')`}} className="pt-[230px] bg-center h-screen bg-no-repeat bg-cover flex flex-col items-center">
+      <div style={{backgroundImage:`url('${props.HeroImage}')`}} className="pt-[170px] bg-center h-screen bg-no-repeat bg-cover flex flex-col items-center">
         <h1 className="font-sans text-[var(--secound)]  text-5xl font-semibold text-center">
           {props.Name}
         </h1>

@@ -11,7 +11,7 @@ export function LandingPageHero() {
           Bem-vindo (a) à Etec Paulistano
         </span>
 
-        <h1 className="text-yellow-350 
+        <h1 className="text-yellow-350 font-semibold
         lg:text-7xl md:text-6xl sm:text-5xl">
         Formando profissionais<br />desde 2010
         </h1>
