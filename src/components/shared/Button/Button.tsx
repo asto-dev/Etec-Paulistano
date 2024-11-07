@@ -11,7 +11,11 @@ function Button({ content, Bordertheme, pathToPage }: ButtonProps) {
   const navigate = useNavigate()
 
   function changeNavigation(path: string) {
-    navigate(path)
+    if(path.startsWith("http")) {
+      window.open(path)
+    } else {
+      navigate(path)
+    }
   }
 
   return (

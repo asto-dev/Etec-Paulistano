@@ -5,7 +5,7 @@ import { Cards } from "../components/pages/StudentArea/Cards"
 
 export function StudentArea() {
   return(
-    <div className="w-full h-full overflow-hidden font-primary bg-blue-1000">
+    <div className="w-full h-full overflow-hidden font-primary bg-[--light-bg]">
       <NavBar />
       <Hero />
       <Cards />

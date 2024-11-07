@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root{
+    --light-blue: #D6D6D6;
     --light-bg: #F6F6F6;
     --secound:#FFBE00;
     --light-secound:#FFCC50;
