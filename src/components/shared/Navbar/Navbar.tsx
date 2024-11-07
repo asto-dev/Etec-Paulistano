@@ -1,10 +1,14 @@
-import { useRef } from "react";
+import { useRef,useEffect } from "react";
 import { HiMiniBars3 } from "react-icons/hi2";
+import { Scroll_Top } from "../../../functions/scroll-top.tsx/scroll-top";
 import Button from "../Button/Button";
 import NavbarLink from "./NavbarLink";
 import etecLogo from "/etec-logo.webp";
 
 export function NavBar() {
+   useEffect(()=>{
+       Scroll_Top()
+  })
   const nav = useRef<HTMLElement>(document.querySelector("#nav"));
   const button = useRef<HTMLDivElement>(document.querySelector("#button"));
   return (
