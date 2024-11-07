@@ -22,15 +22,9 @@ export function NavBar() {
           <NavbarLink path={"#"} content="Institucional" />
           <NavbarLink path={"#"} content="Acadêmico" />
           <NavbarLink path={"#"} content="Contato" />
-          <div id="button" ref={button} className=" hidden lg:block">
-            <Button
-              pathToPage={"/area-aluno"}
-              Bordertheme="Dark"
-              content="Área do Aluno"
-            />
-          </div>
         </ul>
       </nav>
+      
       <div className=" hidden lg:block">
         <Button
           pathToPage={"/area-aluno"}
@@ -51,7 +45,7 @@ export function NavBar() {
               : (nav.current.style.display = "none");
           }
         }}
-        className="block text-6xl  text-white lg:hidden"
+        className="block text-6xl text-white lg:hidden"
       />
     </header>
   );

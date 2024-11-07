@@ -16,7 +16,7 @@ export function Cards() {
                 {card.cardContent}
               </p>
 
-              <button className="bg-yellow-250 text-blue-925 font-semibold bg-[--light-blue] flex items-center h-9 rounded-sm w-fit px-3 gap-4">
+              <button className=" text-blue-925 font-semibold bg-[--light-blue] flex items-center h-9 rounded-sm w-fit px-3 gap-4">
                 <card.buttonIcon className="size-6 text-[--third]" />
                 <span className="text-[--third] max-md:text-sm">{card.buttonContent}</span>
               </button>
