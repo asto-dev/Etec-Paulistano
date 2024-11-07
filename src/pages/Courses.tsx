@@ -1,28 +1,31 @@
+import { useParams } from "react-router-dom";
 import Hero from "../components/pages/Courses/Hero/Hero";
 import Study from "../components/pages/Courses/Hero/Study";
 import { Footer } from "../components/shared/Footer";
 import Gallery from "../components/shared/Gallery/Gallery";
 import { Gallery as Photos } from "../constants/Photos";
 import { NavBar } from "../components/shared/Navbar/Navbar";
+import { detailsCourses } from "../constants/details-courses";
 
 export function Courses() {
+  const { cursosId } = useParams()
+
+  const course = detailsCourses.find(item => item.id === Number(cursosId)) as any
+
+
   return (
     <>
       <NavBar />
       <Hero
-        Name="Desenvolvimento de sistemas"
-        Coordinators={["Flavio Mota", "???"]}
-        Period={["Manhã", "Noite"]}
-        Time={["3 Anos", "X Modulos"]}
-        HeroImage={"./Courses/DS.png"}
+        Name={course.title}
+        Coordinators={course?.coordinator}
+        Period={course?.period}
+        Time={course?.duration}
+        HeroImage={"/Courses/DS.png"}
       />
+
       <Study
-        About1="O curso forma profissionais capacitados para atuar na área de
-          tecnologia da informação,
-           desenvolvendo habilidades em análise, projeto, desenvolvimento,
-          teste, manutenção e  gerenciamento de sistemas tecnológicos.
-          Durante a formação, os alunos aprenderão a  especificar
-          requisitos e implementar soluções."
+        About1={course.description}
         About2="Após a conclusão, estarão preparados para atuar como analistas de
           sistemas,
            programadores, desenvolvedores web e arquitetos de software,
@@ -30,6 +33,7 @@ export function Courses() {
           área. Essa formação proporciona uma base sólida  para a carreira
           em tecnologia, alinhando teoria e prática às demandas do setor."
       />
+
       <Gallery Name="Galeria dos Alunos" Gallery={Photos} />
       <Footer />
     </>

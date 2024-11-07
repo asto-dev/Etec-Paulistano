@@ -22,9 +22,16 @@ export function NavBar() {
           <NavbarLink path={"#"} content="Institucional" />
           <NavbarLink path={"#"} content="Acadêmico" />
           <NavbarLink path={"#"} content="Contato" />
+          <div className="lg:hidden">
+            <Button
+              pathToPage={"/area-aluno"}
+              Bordertheme="Dark"
+              content="Área do Aluno"
+            />
+          </div>
         </ul>
       </nav>
-      
+
       <div className=" hidden lg:block">
         <Button
           pathToPage={"/area-aluno"}

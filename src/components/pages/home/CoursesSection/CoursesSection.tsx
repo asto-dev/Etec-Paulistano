@@ -13,7 +13,7 @@ export function CoursesSection() {
 
       <div className="p-10 bg-[#171A4A] flex justify-around flex-wrap gap-3">
         {courses.map((curso, index) => (
-          <CardCurso name={curso.name} imgUrl={curso.imgUrl} key={index}/>
+          <CardCurso courseId={curso.id} name={curso.name} imgUrl={curso.imgUrl} key={index} path=""/>
         ))}
       </div>
     </>
