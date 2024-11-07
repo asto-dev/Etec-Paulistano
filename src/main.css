@@ -6,13 +6,15 @@
     --light-bg: #F6F6F6;
     --secound:#FFBE00;
     --light-secound:#FFCC50;
-    ---primary:#000020;
+    --primary:#000020;
     --light-primary:#171A4A;
     --third:#281F7A;
 }
+*{
+    box-sizing: border-box;
+}
 body{
     overflow-x: hidden;
-    box-sizing: border-box;
 }
 @layer base {
     * {
